@@ -8,10 +8,39 @@ import drivers.DriverD;
 import transport.PassengerCar;
 import transport.Truck;
 import transport.Bus;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
 
+
+
+
+        ArrayList<String> mech = new ArrayList<>();
+        mech.add("ivan");
+        mech.add("sergey");
+        mech.add("micha");
+        ArrayList<String> auto = new ArrayList<>();
+        auto.add("audi");
+        auto.add("bmw");
+        auto.add("lada");
+        ArrayList<String> driv = new ArrayList<>();
+        driv.add("bob");
+        driv.add("bim");
+        driv.add("richy");
+
+
+        for (int i=0; i< auto.size(); i++){
+            System.out.println("авто--" + auto.get(i)+":");
+            System.out.println("водитель--" + driv.get(i)+":");
+            System.out.println("механик--" + mech.get(i)+":");
+            System.out.println("---------------");
+        }
+
+
+
+
+/*
         PassengerCar bmw = new PassengerCar("BMW", "X6", 2.9);
         PassengerCar audi = new PassengerCar("Audi", "Q5", 3.2);
         PassengerCar hyundai = new PassengerCar("Hyundai", "Sonata", 1.6);
@@ -71,5 +100,7 @@ public class Main {
         honda.checkDriverLicense();
         faw.checkDriverLicense();
         liaz.checkDriverLicense();
+
+ */
     }
 }
