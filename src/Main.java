@@ -8,14 +8,24 @@ import drivers.DriverD;
 import transport.PassengerCar;
 import transport.Truck;
 import transport.Bus;
-import java.util.ArrayList;
+import java.util.*;
+
 
 public class Main {
     public static void main(String[] args) {
 
 
+        Map<String, String> automech = new HashMap<>();
+        automech.putIfAbsent("audi", "ivan");
+        automech.putIfAbsent("bmw", "micha");
+        automech.putIfAbsent("lada", "micha");
 
+        Map<String, String> mechauto = new HashMap<>();
+        mechauto.putIfAbsent("ivan", "audi");
+        mechauto.putIfAbsent("sergey", "lada");
+        mechauto.putIfAbsent("micha", "bmw");
 
+/*
         ArrayList<String> mech = new ArrayList<>();
         mech.add("ivan");
         mech.add("sergey");
@@ -37,10 +47,6 @@ public class Main {
             System.out.println("---------------");
         }
 
-
-
-
-/*
         PassengerCar bmw = new PassengerCar("BMW", "X6", 2.9);
         PassengerCar audi = new PassengerCar("Audi", "Q5", 3.2);
         PassengerCar hyundai = new PassengerCar("Hyundai", "Sonata", 1.6);
